@@ -1,0 +1,35 @@
+// Include fonts
+@font-face {
+    font-family: 'Officina Bold';
+    src: url('../fonts/officina-serif-bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Officina Book';
+    src: url('../fonts/officina-serif-book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Cyrillic';
+    src: url('../fonts/roboto-cyrillic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Latin';
+    src: url('../fonts/roboto-latin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Thicker Extra Bold';
+    src: url('../fonts/Thicker-Extrabold-Italic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}

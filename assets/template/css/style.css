@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Officina Bold';
+  src: url("../fonts/officina-serif-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Officina Book';
+  src: url("../fonts/officina-serif-book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Cyrillic';
+  src: url("../fonts/roboto-cyrillic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Latin';
+  src: url("../fonts/roboto-latin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Thicker Extra Bold';
+  src: url("../fonts/Thicker-Extrabold-Italic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  color: #787878;
+  text-align: left;
+  font: 13px/1.462 Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  background: #ece9e2;
+  min-width: 990px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body .container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+body .top.desktop-only {
+  font-family: Roboto Cyrillic ,sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body .top.desktop-only a {
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+body .top.desktop-only button {
+  margin: 0;
+  padding: 0 15px;
+  border: none;
+  background: none;
+  vertical-align: middle;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+body .top.desktop-only .chat-button {
+  margin-top: -10px;
+}
+
+body .top.desktop-only .account-button {
+  background: #fdf7d0;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+body .top.desktop-only .account-button img {
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 3px 0;
+  vertical-align: middle;
+}
+
+body .top.desktop-only a:hover {
+  color: #f6a000;
+}
+
+body .top.desktop-only .container.flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .top.desktop-only .link-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+body .top.desktop-only .link-wrapper.center a span {
+  border-bottom: 1px solid rgba(40, 40, 40, 0.33);
+}
+
+body .top.desktop-only .link-wrapper.center a:hover > span {
+  border-bottom: 1px solid #f6a000;
+}
+
+body .top.desktop-only .link-wrapper.center a.active span {
+  border: none;
+}
+
+body .top.desktop-only .link-wrapper.center a.active {
+  border-bottom: 3px solid #fbce5d;
+  border-top: 3px solid transparent;
+  background: none;
+  padding-bottom: 10px;
+}
+
+body .top.desktop-only a.second {
+  border-left: 2px dotted #CBCCCD;
+  padding-left: 13px;
+}
+
+@media (max-width: 1099px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .mobile-only {
+    display: none;
+  }
+}

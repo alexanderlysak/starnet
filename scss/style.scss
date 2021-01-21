@@ -1,0 +1,114 @@
+
+@import "fonts.scss";
+
+// <Default>
+$defaultFont: "Nimbus Sans L";
+$defaultColor: #787878;
+//<Default Color>
+
+.flex {
+    display: flex;
+}
+
+body {
+    color: $defaultColor;
+    text-align: left;
+    font: 13px/1.462 Arial,"Helvetica CY",$defaultFont,sans-serif;
+    background: #ece9e2;
+    min-width: 990px;
+    -webkit-font-smoothing: antialiased;
+
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .top.desktop-only {
+        font-family: Roboto Cyrillic ,sans-serif;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        a {
+            font-size: 15px;
+            color: #000;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        button {
+            margin: 0;
+            padding: 0 15px;
+            border: none;
+            background: none;
+            vertical-align: middle;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .chat-button {
+            margin-top: -10px;
+        }
+
+        .account-button {
+            background: #fdf7d0;
+            padding: 10px;
+            margin-top: -10px;
+            img {
+                width: 18px;
+                height: 18px;
+                margin: 0 5px 3px 0;
+                vertical-align: middle;
+            }
+        }
+
+        
+        
+        a:hover {
+            color: #f6a000;
+        }
+
+       
+
+        .container.flex {
+            // border: 1px solid red;
+            justify-content: space-between;
+        }
+
+        .link-wrapper {
+            position: relative;
+            height: 100%;
+        }
+
+        .link-wrapper.center a span {
+            border-bottom: 1px solid rgba(40,40,40,.33);
+        }
+
+        .link-wrapper.center a:hover > span {
+            border-bottom: 1px solid #f6a000;
+        }
+
+        .link-wrapper.center a.active span {
+            border: none;
+        }
+        .link-wrapper.center a.active  {
+            border-bottom: 3px solid #fbce5d;
+            border-top: 3px solid transparent;
+            background: none;
+            padding-bottom: 10px;
+        }
+
+
+        a.second {
+            border-left: 2px dotted #CBCCCD;
+            padding-left: 13px;
+        }
+    }
+
+
+
+   
+
+}
+
+
+@import "media.scss";
